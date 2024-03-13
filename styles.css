@@ -3,6 +3,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     border: 0;
+    background-color: #ffd9a0;
 }
 ol, 
 ul {
@@ -124,6 +125,15 @@ p {
     border-radius: 5px;
     margin-top: 16px;
     color: rgb(24, 22, 22);
+}
+
+.greeting {
+    background-color: rgb(179, 243, 222);
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-style: initial;
+    font-size: 20px;
 }
 
 footer {
