@@ -1,0 +1,285 @@
+body {
+    font-family: "Merriweather", serif;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+ol, 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    height: auto;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: aquamarine;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+header a i {
+    color: black;
+    font-size: 1.5em;
+    padding: 0.3em;
+}
+
+header nav ul {
+    display: flex;
+    font-size: 24px;
+    gap: 1.5em;
+    margin-right: 3em;
+}
+
+header nav ul li a {
+    color: black;
+}
+
+h2 {
+    color: rgb(17, 17, 17);
+    font-family: "Merriweather", serif;
+    margin: 15px 0px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.fa-solid.fa-cat {
+    position: fixed;
+    color: #2d385e;
+    bottom: 10px;
+    right: 30px;
+    font-size: 40px;
+}
+
+.seccion-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    padding: 5%;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.card {
+    width: 325px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    border: solid 2px black;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+h3, h2 {
+    font-size: 24px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    color:rgb(66, 52, 52);
+    font-size: 20px;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    line-height: 1.2;
+}
+
+.more {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: azure;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 16px;
+    color: rgb(24, 22, 22);
+}
+
+footer {
+    background-color: rgb(157, 207, 186);
+    width: 100%;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+footer nav ul li a{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+/*CONTACTO*/
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color:white ;
+    box-sizing: border-box;
+    padding: 2em;
+}
+
+.formulario h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.formulario p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.form-row input, textarea {
+    display: inline-block;
+    border: outset 3px;
+    border-radius: 5px;
+    background-color: #aee4df;
+    margin: auto;
+    font-size: 15px;
+    border-color: aquamarine;
+    outline: none;
+}
+
+.form-row label {
+    margin-bottom: 10px;
+}
+
+.form-row button {
+    display: inline-block;
+    font-size: 20px;
+    background-color: aquamarine;
+    color: #2d385e;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 8px 16px;
+}
+
+.form-row button:hover{
+    background-color: aquamarine;
+
+} 
+
+/*MENÚ*/
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor:pointer;
+    display: none;
+}
+
+
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    body {
+        background-color: blanchedalmond;
+    }
+    .seccion-1 {
+        font-size: 15px;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container {
+        font-size: 15px;
+        display: block;
+        text-align: center;
+    }
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .checkbtn {
+        display: block;
+        color: white;
+    }
+
+    #encabezado ul {
+        position: fixed;
+        box-sizing: border-box;
+        
+        width: 100%;
+        height: 100vh;
+        background: pink ;
+        align-items: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.8s;
+    }
+    #check:checked ~ ul {
+        left: 0;
+        display: block;
+    }
+
+    #encabezado nav ul li {
+        display: block;
+        
+        margin: 60px 0;
+        line-height: 20px;
+        text-align: center;  
+    }
+
+    #encabezado nav ul li a {
+        font-size: 30px;
+    }
+
+    #check:checked ~ .checkbtn {
+        color: pink;
+    }
+    }

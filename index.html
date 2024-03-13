@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/05cbb1349a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <script src="script.js"defer></script>
+</head>
+<body>
+    <div class="container">
+        <header id="encabezado">
+            <h1>
+            <a href="index.html" class="fuente"><i class="fa-regular fa-moon" height="100px" width="100px"></i></a></h1>
+            <nav>
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                  <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#acerca">Acerca de mi</a></li>
+                    <li><a href="#trabajos">Trabajos</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="seccion-principal">
+            <section class="seccion-1">
+            <div class="acerca-de">
+                <br><br>
+                <h2 class="titulo"><strong>Acerca de mí</strong></h2>
+                <p>Bienvenido, espero tengas un bonito día</p>
+                <p class="parrafo">¡Hola! Mi nombre es Carlota, soy de Lima-Perú. 
+                <br>Me gusta el invierno, los girasoles y un buen café.
+                </p>
+            </div>
+            <div>
+                <img src="img/gato_3.png" alt="imagen-portada"
+                width="240px"
+                height="240px">
+            </div>
+            </section>
+            <section class="seccion-2">
+                <img src="img/atardecer.jpg" alt="imagen-atardecer" height="640px"
+                width="100%">
+            </section>
+            <div class="card-container">
+                <div class="card">
+                    <img src="img/xz1.jpg" alt="xz1">
+                    <div class="card-content">
+                        <h3>Música favorita</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Voluptates sed porro consequatur officia corporis, ipsam id alias voluptate!</p>
+                        <a href="" class="more">Leer más</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/xz2.jpg" alt="xz2">
+                    <div class="card-content">
+                        <h3>Música favorita</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Voluptates sed porro consequatur officia corporis, ipsam id alias voluptate!</p>
+                        <a href="" class="more">Leer más</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/xz3.jpg" alt="xz3">
+                    <div class="card-content">
+                        <h3>Música favorita</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Voluptates sed porro consequatur officia corporis, ipsam id alias voluptate!</p>
+                        <a href="" class="more">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <form action="" method="get" class="formulario">
+             <h2 class="tituloform" >Contacto</h2>
+             <p><em>Deja tu sugerencia, te leeremos prontamente</em></p>
+             <div class="form-row">
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" name="nombre" type="text"/>
+             </div>
+             <div class="form-row">
+                <label for="email">Email:</label>
+                <input 
+                id="email"
+                name="email"
+                type="email"
+                placeholder="123ana@gmail.com">
+             </div>
+             <div class="form-row">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+             </div>
+             <div class="form-row">
+                <button>Enviar</button>
+             </div>
+            </form>
+        <footer>
+            <div class="footer">
+            <a href="index.html"><i class="fa-solid fa-cat"></i></a>
+              <nav>
+                <ul class="sociales"> <h2>Redes Sociales</h2>
+                    <h3>
+                    <li><a href="https://es-la.facebook.com/">Facebook</a></li>
+                    <li><a href="https://twitter.com/?lang=es">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=A_sC4V-Kpi4">Youtube</a></li>
+                    <li><a href="https://pe.linkedin.com/">Linkedin</a></li></h3>
+                </ul>
+              </nav>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
